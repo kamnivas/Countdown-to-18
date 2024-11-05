@@ -1,5 +1,5 @@
 function calculateDays() {
-    const birthDate = new Date('2006-01-01'); // Replace with your birthdate (YYYY-MM-DD format)
+    const birthDate = new Date('2010-12-24');
     const today = new Date();
 
     // Calculate the date of the 18th birthday
