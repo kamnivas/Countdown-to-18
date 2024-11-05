@@ -14,10 +14,8 @@ function calculateDays() {
     // Display the result
     const resultDiv = document.getElementById('result');
     if (daysLeft > 0) {
-        resultDiv.textContent = `You have ${daysLeft} days left until December 24, 2028.`;
-    } else if (daysLeft === 0) {
-        resultDiv.textContent = "Today is December 24, 2028!";
+        resultDiv.textContent = `You have ${daysLeft} days until you're 18`;
     } else {
-        resultDiv.textContent = "December 24, 2028 has already passed!";
+        resultDiv.textContent = "You are already 18!";
     }
 }
