@@ -1,5 +1,5 @@
 function calculateDays() {
-    const yourBirthDate = new Date('2006-01-01');  // replace with your birthdate
+    const yourBirthDate = new Date('2010-12-24');
     const today = new Date();
     const eighteenthBirthday = new Date(yourBirthDate);
     eighteenthBirthday.setFullYear(yourBirthDate.getFullYear() + 18);
