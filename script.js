@@ -1,5 +1,5 @@
 function calculateDays() {
-    const targetDate = new Date(2028, 12, 24);
+    const targetDate = new Date(2028, 11, 24);
     const today = new Date();
 
     // Calculate the difference in milliseconds
