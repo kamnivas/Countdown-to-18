@@ -1,6 +1,6 @@
 function calculateDays() {
-    const targetDate = new Date(2028, 12, 24); // December 24, 2028 (local time, not UTC)
-    const today = new Date(); // This will give the current date in your local time zone (Los Angeles)
+    const targetDate = new Date(2028, 12, 24);
+    const today = new Date();
 
     // Calculate the difference in milliseconds
     const timeDifference = targetDate - today;
