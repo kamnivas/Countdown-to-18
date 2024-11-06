@@ -4,5 +4,18 @@
     "description": "Countdown to my 18th birthday",
     "display": "standalone",
     "background_color": "#000000",
-    "theme_color": "#121212"
+    "theme_color": "#121212",
+    "start_url": "./",
+    "icons": [
+        {
+            "src": "./icons/clock-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "./icons/clock-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
 }
