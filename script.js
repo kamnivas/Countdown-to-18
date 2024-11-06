@@ -1,12 +1,9 @@
 function calculateDays() {
-    const targetDate = new Date(Date.UTC(2028, 11, 24)); // December 24, 2028 in UTC (months are 0-indexed)
-    const today = new Date();
-
-    // Get today's date in UTC to avoid timezone issues
-    const todayUTC = new Date(Date.UTC(today.getFullYear(), today.getMonth(), today.getDate()));
+    const targetDate = new Date(2028, 12, 24); // December 24, 2028 (local time, not UTC)
+    const today = new Date(); // This will give the current date in your local time zone (Los Angeles)
 
     // Calculate the difference in milliseconds
-    const timeDifference = targetDate - todayUTC;
+    const timeDifference = targetDate - today;
 
     // Convert milliseconds to days
     const daysLeft = Math.ceil(timeDifference / (1000 * 60 * 60 * 24));
