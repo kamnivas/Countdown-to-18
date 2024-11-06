@@ -1,8 +1,8 @@
 {
-    "short_name": "Countdown-to-18",
+    "short_name": "18 Countdown",
     "name": "Countdown to 18",
     "description": "Countdown to my 18th birthday",
     "display": "standalone",
     "background_color": "#000000",
-    "theme_color": "#ffffff"
+    "theme_color": "#121212"
 }
