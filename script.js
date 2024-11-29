@@ -25,22 +25,46 @@ function calculateCountdown(unit) {
         }
 
         // Display the results based on the chosen unit
+        const resultDiv = document.getElementById('result');
+        resultDiv.innerHTML = ''; // Clear previous content
+
+        // Create and display the result based on the chosen unit
+        const message = document.createElement('p');
+        message.textContent = "You have:";
+
+        let resultTextElement;
         switch (unit) {
             case 'days':
-                resultText = `${totalDays} Days`;
+                resultTextElement = document.createElement('span');
+                resultTextElement.textContent = `${totalDays} Days`;
+                resultTextElement.style.fontSize = '2em';
+                resultTextElement.style.fontWeight = 'bold';
                 break;
             case 'months':
                 const totalMonths = years * 12 + months;  // Convert years into months
-                resultText = `${totalMonths} Months, ${days} Days`;
+                resultTextElement = document.createElement('span');
+                resultTextElement.textContent = `${totalMonths} Months, ${days} Days`;
+                resultTextElement.style.fontSize = '2em';
+                resultTextElement.style.fontWeight = 'bold';
                 break;
             case 'years':
-                resultText = `${years} Years, ${months} Months, ${days} Days`;
+                resultTextElement = document.createElement('span');
+                resultTextElement.textContent = `${years} Years, ${months} Months, ${days} Days`;
+                resultTextElement.style.fontSize = '2em';
+                resultTextElement.style.fontWeight = 'bold';
                 break;
         }
-    } else {
-        resultText = "You are already 18!";
-    }
 
-    const resultDiv = document.getElementById('result');
-    resultDiv.textContent = resultText;
+        const untilText = document.createElement('p');
+        untilText.textContent = "until you turn 18";
+
+        // Append the message and result to the resultDiv
+        resultDiv.appendChild(message);
+        resultDiv.appendChild(resultTextElement);
+        resultDiv.appendChild(untilText);
+    } else {
+        const message = document.createElement('p');
+        message.textContent = "You are already 18!";
+        resultDiv.appendChild(message);
+    }
 }
