@@ -44,13 +44,13 @@ function calculateCountdown(unit) {
                 const totalMonths = years * 12 + months;  // Convert years into months
                 resultTextElement = document.createElement('span');
                 resultTextElement.textContent = `${totalMonths} Months, ${days} Days`;
-                resultTextElement.style.fontSize = '1.5em';
+                resultTextElement.style.fontSize = '1.25em';
                 resultTextElement.style.fontWeight = 'bold';
                 break;
             case 'years':
                 resultTextElement = document.createElement('span');
                 resultTextElement.textContent = `${years} Years, ${months} Months, ${days} Days`;
-                resultTextElement.style.fontSize = '1.25em';
+                resultTextElement.style.fontSize = '1em';
                 resultTextElement.style.fontWeight = 'bold';
                 break;
         }
